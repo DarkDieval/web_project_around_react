@@ -1,16 +1,33 @@
-# React + Vite
+# Around the U.S. – Proyecto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un sitio web responsive de página única construido con React. Muestra un perfil de usuario y tarjetas con lugares emblemáticos de Estados Unidos. Los usuarios pueden ver las tarjetas, dar "me gusta" y abrir una vista ampliada de la imagen. El proyecto es el resultado del Sprint 14 del curso Practicum de Yandex, donde se migró un sitio estático a React.
 
-Currently, two official plugins are available:
+## 🚀 Demo en vivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 [Ver demo](https://darkdieval.github.io/web_project_around_react/)
 
-## React Compiler
+> **Nota:** La primera carga puede tardar unos segundos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Características
 
-## Expanding the ESLint configuration
+- **Diseño responsive** – se adapta a pantallas desde 320px hasta 1280px.
+- **Tarjetas dinámicas** – usando datos de prueba (mock data).
+- **Ventanas emergentes (popups)** – para agregar tarjetas, editar perfil y cambiar avatar.
+- **Botones de like y eliminar** – interacción visual (sin backend aún).
+- **Componentes modulares** – Header, Main, Footer, Card, Popup y formularios.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías utilizadas
+
+- React 19
+- Vite (bundler)
+- CSS3 con metodología BEM
+- Git y GitHub Pages (despliegue)
+
+## 📦 Instalación y configuración local
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/DarkDieval/web_project_around_react.git
+cd web_project_around_react
+```

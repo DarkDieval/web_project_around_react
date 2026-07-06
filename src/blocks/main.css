@@ -27,7 +27,6 @@
   object-fit: cover;
 }
 
-/* Overlay oscuro al hacer hover sobre la foto de perfil */
 .profile__image-overlay {
   position: absolute;
   top: 0;
@@ -172,8 +171,6 @@
   cursor: pointer;
 }
 
-/* Botón de borrar: usa la imagen TrashCan.png si existe,
-   o el SVG inline como respaldo visual */
 .places__card-delete-button {
   position: absolute;
   top: 18px;
@@ -183,17 +180,13 @@
   cursor: pointer;
   width: 18px;
   height: 19.3px;
-  /* Imagen principal — asegúrate de que ../images/TrashCan.png exista */
   background-image: url("../images/TrashCan.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   z-index: 10;
-  /* SVG de caneca como respaldo si la imagen no carga */
-  /* Se sobreescribirá si TrashCan.png existe */
 }
 
-/* Ícono SVG de caneca como respaldo (se muestra si la imagen falla) */
 .places__card-delete-button::after {
   content: "";
   position: absolute;
@@ -248,7 +241,8 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+}
 
 @media screen and (max-width: 768px) {
   .main {
@@ -433,11 +427,9 @@
     white-space: normal;
   }
 
-
   .profile__button-edit {
     margin-top: 10px;
   }
-
 
   .profile__button-add {
     width: 100%;
@@ -449,14 +441,12 @@
     margin-bottom: 48px;
   }
 
-
   .places__grid {
     grid-template-columns: 1fr;
     max-width: 282px;
     margin: 0 auto;
     gap: 20px;
   }
-
 
   .places__card {
     width: 100%;

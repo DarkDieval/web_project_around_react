@@ -4,6 +4,7 @@ import NewCard from "./components/Popup/forms/NewCard";
 import EditProfile from "./components/Popup/forms/EditProfile";
 import EditAvatar from "./components/Popup/forms/EditAvatar";
 import Card from "./components/Card/Card";
+import avatar from "../../images/JacquesCousteau.jpg";
 
 const initialCards = [
   {
@@ -39,15 +40,13 @@ const initialCards = [
 ];
 
 export default function Main() {
-  const [cards, setCards] = useState(initialCards);
-  const [userData, setUserData] = useState({
+  const [cards] = useState(initialCards);
+  const [userData] = useState({
     name: "Jacques Cousteau",
     about: "Explorer",
-    avatar: "./images/JacquesCousteau.jpg",
   });
   const [popup, setPopup] = useState(null);
 
-  // Definir popups
   const newCardPopup = { title: "Nuevo lugar", children: <NewCard /> };
   const editProfilePopup = {
     title: "Editar perfil",
@@ -83,11 +82,7 @@ export default function Main() {
     <main className="main">
       <div className="profile">
         <div className="profile__image-container">
-          <img
-            className="profile__image"
-            src={userData.avatar}
-            alt="Foto de perfil"
-          />
+          <img className="profile__image" src={avatar} alt="Foto de perfil" />
           <div className="profile__image-overlay">
             <button
               className="profile__image-edit-button"
