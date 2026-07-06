@@ -63,9 +63,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+  /*visibility: hidden;
+  opacity: 0;*/
+  transition:
+    visibility 0.3s,
+    opacity 0.3s ease-in-out;
   z-index: 1000;
 }
 
@@ -147,7 +149,6 @@
   opacity: 0.6;
 }
 
-/* Estilos para el botón deshabilitado durante carga (Punto 10) */
 .popup__button_save:disabled,
 .popup__button_create:disabled {
   background-color: #c4c4c4;
@@ -155,7 +156,6 @@
   opacity: 0.8;
 }
 
-/* Popup de actualizar avatar — reutiliza los estilos generales de popup__input */
 .popup__input-avatar {
   margin-top: 0;
 }
