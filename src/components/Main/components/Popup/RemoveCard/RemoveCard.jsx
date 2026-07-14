@@ -3,8 +3,7 @@ import Popup from "../Popup";
 function RemoveCard({ card, onConfirm, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    onConfirm(card); // Ejecuta la eliminación
-    // onClose(); // Se cierra después de confirmar
+    onConfirm(card);
   };
 
   return (
