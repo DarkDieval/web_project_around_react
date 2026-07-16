@@ -4,7 +4,7 @@ Sitio web responsive para compartir lugares emblemáticos. Construido con React 
 
 ## 🚀 Demo en vivo
 
-🔗 [Ver demo](https://darkdieval.github.io/web_project_around_react_sprint15/)
+🔗 [Ver demo](https://darkdieval.github.io/web_project_around_react/)
 
 ## ✨ Funcionalidades
 
